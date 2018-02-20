@@ -3,43 +3,61 @@ Featurizer: Tf-IDFfeaturizer
 Classifier: MLPClassifier
 /Users/bhavyakarki/Downloads/conda/lib/python2.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:561: ConvergenceWarning: Stochastic Optimizer: Maximum iterations reached and the optimization hasn't converged yet.
   % (), ConvergenceWarning)
+/Users/bhavyakarki/Downloads/conda/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
 Accuracy: 0.0340872889455
-Precision: 0.0340872889455
-Recall: 0.0340872889455
-F-measure: 0.0340872889455
+Precision: 3.0462277878e-05
+Recall: 0.000893655049151
+F-measure: 5.8916260172e-05
 -------------------------------------------------
 Featurizer: Tf-IDFfeaturizer
 Classifier: SVMClassifier
 Accuracy: 0.0340872889455
-Precision: 0.0340872889455
-Recall: 0.0340872889455
-F-measure: 0.0340872889455
+Precision: 3.0462277878e-05
+Recall: 0.000893655049151
+F-measure: 5.8916260172e-05
 -------------------------------------------------
 Featurizer: Tf-IDFfeaturizer
 Classifier: MultinomialNaiveBayes
-Accuracy: 0.0423701815865
-Precision: 0.0423701815865
-Recall: 0.0423701815865
-F-measure: 0.0423701815865
+Accuracy: 0.0426887543804
+Precision: 0.000402623270465
+Recall: 0.00125003123804
+F-measure: 0.000328317888537
 -------------------------------------------------
 Featurizer: Countfeaturizer
 Classifier: MLPClassifier
-Accuracy: 0.0388658808538
-Precision: 0.0388658808538
-Recall: 0.0388658808538
-F-measure: 0.0388658808538
+/Users/bhavyakarki/Downloads/conda/lib/python2.7/site-packages/sklearn/metrics/classification.py:1115: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+Accuracy: 0.0481044918764
+Precision: 0.0126246077405
+Recall: 0.0151008757731
+F-measure: 0.0120339865892
 -------------------------------------------------
 Featurizer: Countfeaturizer
 Classifier: SVMClassifier
-Accuracy: 0.0923861102262
-Precision: 0.0923861102262
-Recall: 0.0923861102262
-F-measure: 0.0923861102262
+Accuracy: 0.079324625677
+Precision: 0.0190894903697
+Recall: 0.0196813838616
+F-measure: 0.016338704697
 -------------------------------------------------
 Featurizer: Countfeaturizer
 Classifier: MultinomialNaiveBayes
-Accuracy: 0.062758840395
-Precision: 0.062758840395
-Recall: 0.062758840395
-F-measure: 0.062758840395
+Accuracy: 0.0579802484868
+Precision: 0.00296328931733
+Recall: 0.00212418426383
+F-measure: 0.00109604743906
+-------------------------------------------------
+Featurizer: Hashvectorizer
+Classifier: MLPClassifier
+Accuracy: 0.0340872889455
+Precision: 3.0462277878e-05
+Recall: 0.000893655049151
+F-measure: 5.8916260172e-05
+-------------------------------------------------
+Featurizer: Hashvectorizer
+Classifier: SVMClassifier
+Accuracy: 0.0340872889455
+Precision: 3.0462277878e-05
+Recall: 0.000893655049151
+F-measure: 5.8916260172e-05
 -------------------------------------------------

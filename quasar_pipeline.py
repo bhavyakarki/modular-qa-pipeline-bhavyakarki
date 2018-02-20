@@ -6,6 +6,7 @@ from Retrieval import Retrieval
 from Featurizer import Featurizer
 from TfIdfFeaturizer import TfIdfFeaturizer
 from CountFeaturizer import CountFeaturizer
+from HashVectorizer import HashVectorizer
 from Classifier import Classifier
 from MultinomialNaiveBayes import MultinomialNaiveBayes
 from NNClassifier import NNClassifier
@@ -46,7 +47,7 @@ class Pipeline(object):
 	def question_answering(self):
 		dataset_type = self.trainData['origin']
 		candidate_answers = self.trainData['candidates']
-		X_train, Y_train = self.makeXY(self.trainData['questions'][0:5000])
+		X_train, Y_train = self.makeXY(self.trainData['questions'][0:3000])
 		X_val, Y_val_true = self.makeXY(self.valData['questions'])
 
 		#featurization
@@ -71,7 +72,7 @@ if __name__ == '__main__':
 	trainFilePath = sys.argv[1] #please give the path to your reformatted quasar-s json train file
 	valFilePath = sys.argv[2] # provide the path to val file
 	retrievalInstance = Retrieval()
-	featurizerInstance = [TfIdfFeaturizer(),CountFeaturizer()]
+	featurizerInstance = [TfIdfFeaturizer(),CountFeaturizer(), HashVectorizer()]
 	classifierInstance = [NNClassifier(),SVMClassifier(),MultinomialNaiveBayes()]
 
 	for feature in featurizerInstance:
