@@ -1,0 +1,45 @@
+bhavyakarki$ python quasar_pipeline.py quasar-s_train_formatted.json quasar-s_dev_formatted.json
+Featurizer: Tf-IDFfeaturizer
+Classifier: MLPClassifier
+/Users/bhavyakarki/Downloads/conda/lib/python2.7/site-packages/sklearn/neural_network/multilayer_perceptron.py:561: ConvergenceWarning: Stochastic Optimizer: Maximum iterations reached and the optimization hasn't converged yet.
+  % (), ConvergenceWarning)
+Accuracy: 0.0340872889455
+Precision: 0.0340872889455
+Recall: 0.0340872889455
+F-measure: 0.0340872889455
+-------------------------------------------------
+Featurizer: Tf-IDFfeaturizer
+Classifier: SVMClassifier
+Accuracy: 0.0340872889455
+Precision: 0.0340872889455
+Recall: 0.0340872889455
+F-measure: 0.0340872889455
+-------------------------------------------------
+Featurizer: Tf-IDFfeaturizer
+Classifier: MultinomialNaiveBayes
+Accuracy: 0.0423701815865
+Precision: 0.0423701815865
+Recall: 0.0423701815865
+F-measure: 0.0423701815865
+-------------------------------------------------
+Featurizer: Countfeaturizer
+Classifier: MLPClassifier
+Accuracy: 0.0388658808538
+Precision: 0.0388658808538
+Recall: 0.0388658808538
+F-measure: 0.0388658808538
+-------------------------------------------------
+Featurizer: Countfeaturizer
+Classifier: SVMClassifier
+Accuracy: 0.0923861102262
+Precision: 0.0923861102262
+Recall: 0.0923861102262
+F-measure: 0.0923861102262
+-------------------------------------------------
+Featurizer: Countfeaturizer
+Classifier: MultinomialNaiveBayes
+Accuracy: 0.062758840395
+Precision: 0.062758840395
+Recall: 0.062758840395
+F-measure: 0.062758840395
+-------------------------------------------------
