@@ -79,5 +79,7 @@ if __name__ == '__main__':
 		for classifier in classifierInstance:
 			trainInstance = Pipeline(trainFilePath, valFilePath, retrievalInstance, feature, classifier)
 
-			print "-------------------------------------------------"
+		print "-------------------------------------------------"
+
+
 

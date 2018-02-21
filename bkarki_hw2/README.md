@@ -9,3 +9,6 @@ The dataset for this assignment is Quasar-S. This dataset consists of 37,000 clo
 (URL for foundation paper: https://arxiv.org/pdf/1707.03904.pdf (Links to an external site.)Links to an external site. )
 
 (URL for dataset: http://curtis.ml.cmu.edu/datasets/quasar/ )
+
+Instructoins to run pipeline:
+run as: "python quasar_pipeline.py quasar-s_train_formatted.json quasar-s_dev_formatted.json"

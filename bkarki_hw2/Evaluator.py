@@ -14,6 +14,13 @@ class Evaluator:
 	@classmethod
 	def getAccuracy(self, Y_true, Y_pred):
 		accuracy = accuracy_score(Y_true, Y_pred)
+		
+		print "************************************"
+		for i in range(len(Y_true)):
+			if Y_pred[i] == Y_true[i]:
+				print 1
+			else:
+				print 0
 		return accuracy
 	
 	#This is a class method that gets precision, recall and f-measure of the model	
